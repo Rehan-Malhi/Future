@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -26,64 +27,64 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 w-full">
       {/* Glass navbar */}
       <div className="mx-auto mt-4 flex max-w-6xl items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-5 py-3 backdrop-blur-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">
-        
+
         {/* Brand */}
-   {/* Brand */}
-<Link href="/" className="text-xl font-extrabold tracking-tight">
-  <Image
-    src="/logo.png"
-    alt="Future Star Logo"
-    width={60}
-    height={60}
-    className="bg-transparent "
-  />
-</Link>
+        {/* Brand */}
+        <Link href="/" className="text-xl bg-white p-1 font-extrabold tracking-tight">
+          <Image
+            src="/logo.png"
+            alt="Future Star Logo"
+            width={40}
+            height={40}
+            className="bg-transparent"
+          />
+        </Link>
 
-{/* Brand + Flags */}
-<div className="flex items-center gap-4">
-  {/* Country Flags */}
-  <div className="hidden items-center gap-3 md:flex">
-    {/* UK */}
-    <div className="relative group">
-      <Image src="/flags/uk.png" alt="UK" width={32} height={32} />
-      <span
-        className="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 rounded-full bg-black/80 px-2 py-0.5 text-[10px] font-medium text-slate-100 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition"
-      >
-        United Kingdom
-      </span>
-    </div>
+        {/* Brand + Flags */}
+        <div className="flex items-center gap-4">
+          {/* Country Flags */}
+          <div className="hidden items-center gap-3 md:flex">
+            {/* UK */}
+            <div className="relative group">
+              <Image src="/flags/uk.png" alt="UK" width={32} height={32} />
+              <span
+                className="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 rounded-full bg-black/80 px-2 py-0.5 text-[10px] font-medium text-slate-100 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition"
+              >
+                United Kingdom
+              </span>
+            </div>
 
-    {/* Netherlands */}
-    <div className="relative group">
-      <Image src="/flags/netherlands.png" alt="Netherlands" width={32} height={32} />
-      <span
-        className="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 rounded-full bg-black/80 px-2 py-0.5 text-[10px] font-medium text-slate-100 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition"
-      >
-        Netherlands
-      </span>
-    </div>
+            {/* Netherlands */}
+            <div className="relative group">
+              <Image src="/flags/netherlands.png" alt="Netherlands" width={32} height={32} />
+              <span
+                className="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 rounded-full bg-black/80 px-2 py-0.5 text-[10px] font-medium text-slate-100 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition"
+              >
+                Netherlands
+              </span>
+            </div>
 
-    {/* Spain */}
-    <div className="relative group">
-      <Image src="/flags/spain.png" alt="Spain" width={32} height={32} />
-      <span
-        className="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 rounded-full bg-black/80 px-2 py-0.5 text-[10px] font-medium text-slate-100 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition"
-      >
-        Spain
-      </span>
-    </div>
+            {/* Spain */}
+            <div className="relative group">
+              <Image src="/flags/spain.png" alt="Spain" width={32} height={32} />
+              <span
+                className="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 rounded-full bg-black/80 px-2 py-0.5 text-[10px] font-medium text-slate-100 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition"
+              >
+                Spain
+              </span>
+            </div>
 
-    {/* USA */}
-    <div className="relative group">
-      <Image src="/flags/us.png" alt="USA" width={32} height={32} />
-      <span
-        className="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 rounded-full bg-black/80 px-2 py-0.5 text-[10px] font-medium text-slate-100 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition"
-      >
-        United States
-      </span>
-    </div>
-  </div>
-</div>
+            {/* USA */}
+            <div className="relative group">
+              <Image src="/flags/us.png" alt="USA" width={32} height={32} />
+              <span
+                className="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 rounded-full bg-black/80 px-2 py-0.5 text-[10px] font-medium text-slate-100 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition"
+              >
+                United States
+              </span>
+            </div>
+          </div>
+        </div>
 
         {/* Desktop Navigation */}
         <ul className="hidden items-center gap-8 text-sm font-semibold text-slate-200 md:flex">
@@ -91,11 +92,10 @@ export default function Navbar() {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className={`relative py-1 transition ${
-                  isActive(item.href)
-                    ? "text-orange-400"
-                    : "text-slate-200 hover:text-orange-300"
-                }`}
+                className={`relative py-1 transition ${isActive(item.href)
+                  ? "text-orange-400"
+                  : "text-slate-200 hover:text-orange-300"
+                  }`}
               >
                 {item.label}
 
@@ -109,27 +109,18 @@ export default function Navbar() {
 
         {/* Mobile Toggle Button */}
         <button
-          className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-black/30 text-slate-100 md:hidden"
           onClick={() => setOpen(!open)}
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/30 text-slate-100 transition hover:bg-white/10 md:hidden"
+          aria-label="Toggle menu"
         >
-          <span className="relative block h-3 w-4">
-            <span
-              className={`absolute left-0 h-0.5 w-full bg-slate-100 transition ${
-                open ? "top-1.5 rotate-45" : "top-0"
-              }`}
-            />
-            <span
-              className={`absolute left-0 h-0.5 w-full bg-slate-100 transition ${
-                open ? "opacity-0" : "top-1.5 opacity-100"
-              }`}
-            />
-            <span
-              className={`absolute left-0 h-0.5 w-full bg-slate-100 transition ${
-                open ? "bottom-1.5 -rotate-45" : "bottom-0"
-              }`}
-            />
-          </span>
+          {open ? (
+            <XMarkIcon className="h-6 mt-2 w-6 transition-transform duration-200 rotate-90" />
+          ) : (
+            <Bars3Icon className="h-6 mt-2 w-6 transition-transform duration-200" />
+          )}
+
         </button>
+
       </div>
 
       {/* Mobile Dropdown */}
@@ -141,11 +132,10 @@ export default function Navbar() {
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className={`block rounded-full px-3 py-2 transition ${
-                    isActive(item.href)
-                      ? "bg-white/10 text-cyan-400"
-                      : "hover:bg-white/10 hover:text-cyan-300"
-                  }`}
+                  className={`block rounded-full px-3 py-2 transition ${isActive(item.href)
+                    ? "bg-white/10 text-cyan-400"
+                    : "hover:bg-white/10 hover:text-cyan-300"
+                    }`}
                 >
                   {item.label}
                 </Link>

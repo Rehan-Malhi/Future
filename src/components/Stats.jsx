@@ -54,7 +54,7 @@ export default function FutureStarStatsSection() {
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
               Performance that{" "}
-              <span className="bg-gradient-to-r from-[#FF7A00] via-[#FFAE42] to-[#0056D2] bg-clip-text text-transparent">
+              <span className="bg-[#FF7A00] bg-clip-text text-transparent">
                 teams can trust
               </span>
             </h2>

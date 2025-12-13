@@ -13,7 +13,7 @@ export default function AboutFutureStarPage() {
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight">
             Built for{" "}
-            <span className="bg-gradient-to-r from-[#FF7A00] via-[#FFB444] to-[#0056D2] bg-clip-text text-transparent">
+            <span className="bg-[#FF7A00] bg-clip-text text-transparent">
               serious teams
             </span>{" "}
             that want to play.

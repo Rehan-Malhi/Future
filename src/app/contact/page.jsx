@@ -21,7 +21,7 @@ export default function ContactFutureStarPage() {
           </p>
           <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
             Tell us{" "}
-            <span className="bg-gradient-to-r from-[#FF7A00] via-[#FFB444] to-[#0056D2] bg-clip-text text-transparent">
+            <span className="bg-[#FF7A00] bg-clip-text text-transparent">
               what you want to build
             </span>
             .
@@ -183,7 +183,7 @@ export default function ContactFutureStarPage() {
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center rounded-full bg-[radial-gradient(circle_at_top_left,#FF7A00,#FFB444)] px-6 py-2.5 text-sm font-semibold text-slate-950 shadow-[0_0_26px_rgba(255,122,0,0.8)] transition hover:scale-[1.02] hover:shadow-[0_0_36px_rgba(255,122,0,1)]"
+                  className="inline-flex items-center justify-center rounded-full bg-[radial-gradient(circle_at_top_left,#FF7A00,#FFB444)] cursor-pointer px-6 py-2.5 text-md font-semibold text-slate-950 transition hover:scale-[1.02] hover:shadow-[0_0_36px_rgba(255,122,0,1)]"
                 >
                   Submit request
                 </button>

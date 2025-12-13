@@ -65,7 +65,7 @@ export default function FactoryMomentsGallery() {
 
           <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
             Inside the{" "}
-            <span className="bg-gradient-to-r from-[#FF7A00] via-[#FFAE42] to-[#0056D2] bg-clip-text text-transparent">
+            <span className="bg-[#FF7A00] bg-clip-text text-transparent">
               Future Star
             </span>{" "}
             Production Floor

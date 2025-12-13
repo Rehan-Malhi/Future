@@ -52,7 +52,7 @@ export default function FaqSection() {
 
           <h2 className="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight text-white">
             Frequently Asked{" "}
-            <span className="bg-gradient-to-r from-[#FF7A00] via-[#FFB444] to-[#0056D2] bg-clip-text text-transparent">
+            <span className="bg-[#FF7A00] bg-clip-text text-transparent">
               Questions
             </span>
           </h2>

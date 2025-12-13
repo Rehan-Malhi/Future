@@ -49,7 +49,7 @@ export default function HeroFutureStar() {
   return (
     <>
       {/* background: radial-gradient(circle at top, #04293a 0%, #020617 45%, #000 100%); */}
-      <section className="h-[70vh] flex items-center justify-center px-5 md:px-8 text-slate-50">
+      <section className="h-[70vh] flex items-center justify-center mt-6 px-5 md:px-8 text-slate-50">
         <div className="w-full max-w-6xl flex flex-col lg:flex-row items-center justify-between gap-10">
           {/* LEFT SIDE */}
           <div className="flex-1 max-w-xl">

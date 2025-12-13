@@ -18,7 +18,7 @@ export default function Footer() {
               className="inline-flex items-center text-2xl font-extrabold tracking-tight"
             >
               <span className="text-slate-100">Future</span>
-              <span className="ml-1 bg-gradient-to-r from-[#FF7A00] via-[#FFB444] to-[#0056D2] bg-clip-text text-transparent">
+              <span className="ml-1 bg-[#FF7A00] bg-clip-text text-transparent">
                 Star
               </span>
             </Link>

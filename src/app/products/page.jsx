@@ -157,7 +157,7 @@ export default function ProductsPage() {
             </p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
               Explore{" "}
-              <span className="bg-gradient-to-r from-[#FF7A00] via-[#FFB444] to-[#0056D2] bg-clip-text text-transparent">
+              <span className="bg-[#FF7A00] bg-clip-text text-transparent">
                 Future Star
               </span>{" "}
               Products
