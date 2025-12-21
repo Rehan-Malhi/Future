@@ -49,16 +49,17 @@ export default function FutureStarStatsSection() {
         {/* Left: Heading + stats cards */}
         <div className="flex flex-col gap-6">
           <div>
-            <p className="inline-flex items-center rounded-full border border-[#FF7A00]/40 bg-[#FF7A00]/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-[#FF7A00]">
+            <div className="flex items-center border border-[#FF7A00]/30 bg-[#FF7A00]/5 my-6 w-62 font-bold gap-2 rounded-full px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[#FF7A00]">
+              <span className="h-1.5 w-1.5 rounded-full bg-orange-400" />
               Future Star in Numbers
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+            </div>
+            <h2 className="mt-4 text-3xl font-semibold text-[#30318B] tracking-tight sm:text-4xl lg:text-5xl">
               Performance that{" "}
               <span className="bg-[#FF7A00] bg-clip-text text-transparent">
                 teams can trust
               </span>
             </h2>
-            <p className="mt-3 max-w-xl text-sm sm:text-base text-slate-300/90">
+            <p className="mt-3 max-w-xl text-sm sm:text-base text-black">
               Every jersey, every sock, every kit is tracked from sampling to
               match day. These numbers are not just stats—they’re proof that we
               deliver season after season.
@@ -180,7 +181,7 @@ export default function FutureStarStatsSection() {
           </div>
 
           {/* Optional small note for social proof / reassurance */}
-          <p className="text-xs text-slate-400/90">
+          <p className="text-xs text-text-black">
             These stats update as new orders and seasons roll in — giving Future
             Star clubs a clear picture of our reliability before they commit
             their kits to us.

@@ -50,14 +50,14 @@ export default function FaqSection() {
             FAQ
           </p>
 
-          <h2 className="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight text-white">
+          <h2 className="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight text-[#30318B]">
             Frequently Asked{" "}
             <span className="bg-[#FF7A00] bg-clip-text text-transparent">
               Questions
             </span>
           </h2>
 
-          <p className="mt-3 text-slate-300/85 text-sm sm:text-base">
+          <p className="mt-3 text-black text-sm sm:text-base">
             Everything you need to know before placing your next custom apparel order.
           </p>
         </div>

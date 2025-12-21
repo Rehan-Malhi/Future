@@ -12,21 +12,22 @@ export default function ContactFutureStarPage() {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-950 to-black py-12 px-4 text-slate-50 sm:px-6 lg:px-8">
+    <section className="min-h-screen bg-transparent py-12 px-4 text-slate-50 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl space-y-10">
         {/* Heading */}
         <header className="space-y-4 text-center md:text-left">
-          <p className="inline-flex items-center rounded-full border border-[#FF7A00]/40 bg-[#FF7A00]/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-[#FFAE42]">
-            Contact Future Star
-          </p>
-          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+             <div className="flex font-bold items-center border border-[#FF7A00]/30 bg-[#FF7A00]/5 my-6 w-56 gap-2 rounded-full px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[#FF7A00]">
+              <span className="h-1.5 w-1.5 rounded-full bg-orange-400" />
+              Contact Future Star
+            </div>
+          <h1 className="text-3xl text-[#30318B] font-semibold tracking-tight sm:text-4xl lg:text-5xl">
             Tell us{" "}
             <span className="bg-[#FF7A00] bg-clip-text text-transparent">
               what you want to build
             </span>
-            .
+            
           </h1>
-          <p className="mx-auto max-w-2xl text-sm text-slate-300/80 sm:text-base">
+          <p className="mx-auto max-w-2xl text-sm text-black sm:text-base">
             Share your product idea, quantity and artwork. We’ll come back with
             a clear, article-based quote and next steps from sampling to bulk.
           </p>
@@ -35,7 +36,7 @@ export default function ContactFutureStarPage() {
         {/* Layout */}
         <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1.1fr),minmax(0,0.9fr)]">
           {/* Left: Form */}
-          <div className="rounded-2xl border border-slate-800 bg-slate-950/80 p-6 shadow-[0_0_26px_rgba(0,0,0,0.85)] sm:p-7">
+          <div className="rounded-2xl border border-slate-800 bg-[#30318B] p-6 shadow-[0_0_26px_rgba(0,0,0,0.85)] sm:p-7">
             <form
               className="space-y-5"
               onSubmit={(e) => {

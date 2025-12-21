@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { db } from "@/lib/Firebase";
+import { db } from "@/lib/firebase";
 import { ref, get } from "firebase/database";
 
 const fallbackStates = [

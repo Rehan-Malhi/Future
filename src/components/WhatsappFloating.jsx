@@ -54,7 +54,7 @@ export default function WhatsappFloating() {
             animate={{ opacity: 1, x: 0, y: 0 }}
             exit={{ opacity: 0, x: 20, y: 10 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
-            className="px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md border border-cyan-500/30 shadow-[0_0_20px_rgba(34,211,238,0.4)] text-cyan-100 text-sm font-medium"
+            className="px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md border border-cyan-500/30 shadow-[0_0_20px_rgba(34,211,238,0.4)] text-black text-sm font-medium"
           >
             {CTAs[index]}
           </motion.div>

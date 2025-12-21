@@ -5,7 +5,7 @@ import { Instagram, Facebook, Twitter, Mail, PhoneCall } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="relative z-10 mt-2 border-t border-[#FF7A00]/25 bg-transparent">
+    <footer className="relative z-10 mt-2 border-t border-[#FF7A00]/25 bg-[#30318B]">
       {/* top brand glow line */}
       <div className="pointer-events-none absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-[#FF7A00]/50 to-transparent" />
 

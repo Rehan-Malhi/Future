@@ -9,6 +9,10 @@ electrifying : #0056D2 */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --purple:#30318B;
+  --orange:#FF7E23;
+  --grey : #adadad;
+  --text: #000000;
 }
 /* windsurf-ignore */
 :root.inline {
@@ -26,13 +30,7 @@ electrifying : #0056D2 */
 }
 
 body {
-  background: radial-gradient(circle at top,
-  #001B47 0%,
-  #000F2A 60%,
-  #000814 100%
-);
-
-  color: var(--foreground);
+ background-color: #E6E7E9;
   font-family: Arial, Helvetica, sans-serif;
 }
 

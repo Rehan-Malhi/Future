@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { db } from "@/lib/Firebase";
+import { db } from "@/lib/firebase";
 import { ref, get, set } from "firebase/database";
 
 // 🔐 SUPER SIMPLE CLIENT-SIDE PASSWORD

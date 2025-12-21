@@ -1,19 +1,18 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { getDatabase } from "firebase/database";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCLaItKY5zJUcaMfQVS6x13TGPRgSByv2g",
-  authDomain: "future-star-65bf5.firebaseapp.com",
-  databaseURL: "https://future-star-65bf5-default-rtdb.firebaseio.com",
-  projectId: "future-star-65bf5",
-  storageBucket: "future-star-65bf5.firebasestorage.app",
-  messagingSenderId: "286190317486",
-  appId: "1:286190317486:web:2cce296f69bf30221f623f",
-  measurementId: "G-B8BWJC2C7N"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
-export const db = getDatabase(app);
+export const db = getFirestore(app);      // ✅ Firestore exported as db
+export const storage = getStorage(app);

@@ -1,24 +1,26 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 export default function AboutFutureStarPage() {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-950 to-black py-12 px-4 sm:px-6 lg:px-8 text-slate-50">
+    <section className="min-h-screen bg-transparent py-12 px-4 sm:px-6 lg:px-8 text-slate-50">
       <div className="mx-auto max-w-6xl space-y-12">
         {/* Hero */}
         <header className="space-y-4 text-center md:text-left">
-          <p className="inline-flex items-center rounded-full border border-[#FF7A00]/40 bg-[#FF7A00]/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-[#FF7A00]">
+          <div className="flex font-bold items-center border border-[#FF7A00]/30 bg-[#FF7A00]/5 my-6 w-56 gap-2 rounded-full px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[#FF7A00]">
+            <span className="h-1.5 w-1.5 rounded-full bg-orange-400" />
             About Future Star
-          </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight">
+          </div>
+          <h1 className="text-3xl text-[#30318B] sm:text-4xl lg:text-5xl font-semibold tracking-tight">
             Built for{" "}
             <span className="bg-[#FF7A00] bg-clip-text text-transparent">
               serious teams
             </span>{" "}
             that want to play.
           </h1>
-          <p className="mx-auto max-w-2xl text-sm sm:text-base text-slate-300/80">
+          <p className="mx-auto max-w-2xl text-sm sm:text-base text-black">
             Future Star designs and manufactures performance-focused kits,
             tracksuits and teamwear for clubs, academies and brands that demand
             clean design, consistent quality and professional handling from
@@ -29,11 +31,11 @@ export default function AboutFutureStarPage() {
         {/* 2-column: Story + What we do */}
         <div className="grid gap-8 md:grid-cols-[minmax(0,1.2fr),minmax(0,1fr)] items-start">
           {/* Story */}
-          <div className="space-y-4 rounded-2xl border border-slate-800 bg-slate-950/80 p-6 shadow-[0_0_26px_rgba(0,0,0,0.75)] sm:p-7">
-            <h2 className="text-lg sm:text-xl font-semibold text-white">
+          <div className="space-y-4 bg-[#30318B] rounded-2xl border border-slate-800 p-6 shadow-[0_0_26px_rgba(0,0,0,0.75)] sm:p-7">
+            <h2 className="text-lg sm:text-xl font-semibold text-[#FF7E23]">
               Who we are
             </h2>
-            <p className="text-sm leading-relaxed text-slate-300/90">
+            <p className="text-sm  leading-relaxed text-slate-300/90">
               Future Star is a sportswear manufacturing studio obsessed with the
               details that athletes actually feel on the pitch — the way a
               neckline sits, how a fabric breathes under floodlights, and how
@@ -48,8 +50,8 @@ export default function AboutFutureStarPage() {
           </div>
 
           {/* What we focus on */}
-          <div className="space-y-4 rounded-2xl border border-slate-800 bg-slate-950/70 p-6 shadow-[0_0_20px_rgba(0,0,0,0.7)] sm:p-7">
-            <h2 className="text-lg sm:text-xl font-semibold text-white">
+          <div className="space-y-4 bg-[#30318B] rounded-2xl border border-slate-800 p-6 shadow-[0_0_20px_rgba(0,0,0,0.7)] sm:p-7">
+            <h2 className="text-lg sm:text-xl font-semibold text-[#FF7E23]">
               What we do
             </h2>
             <ul className="space-y-3 text-sm text-slate-300/90">
@@ -121,9 +123,9 @@ export default function AboutFutureStarPage() {
         </div>
 
         {/* How we work */}
-        <div className="rounded-2xl border border-slate-800 bg-slate-950/80 p-6 shadow-[0_0_26px_rgba(0,0,0,0.8)] sm:p-7">
+        <div className="rounded-2xl bg-[#30318B] border border-slate-800 p-6 shadow-[0_0_26px_rgba(0,0,0,0.8)] sm:p-7">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <h2 className="text-lg sm:text-xl font-semibold text-white">
+            <h2 className="text-lg sm:text-xl font-semibold text-[#FF7E23]">
               How we work with teams & brands
             </h2>
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-[#FFAE42]">
@@ -166,10 +168,10 @@ export default function AboutFutureStarPage() {
         {/* Why choose us */}
         <div className="grid items-start gap-8 md:grid-cols-[minmax(0,1.2fr),minmax(0,1fr)]">
           <div className="space-y-4">
-            <h2 className="text-lg sm:text-xl font-semibold text-white">
+            <h2 className="text-lg sm:text-xl font-semibold text-[#30318B]">
               Why teams trust Future Star
             </h2>
-            <p className="text-sm text-slate-300/90">
+            <p className="text-sm text-black">
               We design and manufacture with the mindset of both a brand owner
               and a player. That means sharp silhouettes, smart fabric choices,
               and process that respects your time and budget.
@@ -252,17 +254,20 @@ export default function AboutFutureStarPage() {
         <div className="border-t border-slate-800/80 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
             <div>
-              <h2 className="text-lg sm:text-xl font-semibold text-white">
+              <h2 className="text-lg sm:text-xl font-semibold text-[#30318B]">
                 Ready to build your next kit with Future Star?
               </h2>
-              <p className="mt-1 text-sm text-slate-300/90">
+              <p className="mt-1 text-sm text-black">
                 Share your idea, theme or existing kit and we’ll help you turn
                 it into a production-ready article with clear sizes and specs.
               </p>
             </div>
-            <button className="inline-flex items-center justify-center rounded-full bg-[radial-gradient(circle_at_top_left,#FF7A00,#FFB444)] px-6 py-2.5 text-sm font-semibold text-slate-950 shadow-[0_0_26px_rgba(255,122,0,0.8)] transition hover:shadow-[0_0_36px_rgba(255,122,0,1)]">
-              Start a project with Future Star
-            </button>
+                 <Link
+                href="/contact"
+                className="w-full sm:w-auto inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-semibold text-white bg-[#FF7A00] hover:bg-[#e56e00] transition active:scale-[0.98]"
+              >
+                Start Working with us
+              </Link>
           </div>
         </div>
       </div>
