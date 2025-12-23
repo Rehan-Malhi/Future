@@ -46,7 +46,7 @@ export default function Navbar() {
       {/* Glass navbar */}
       <div className="mx-auto mt-4 flex max-w-[1500px] items-center rounded-2xl border border-white/10 bg-[#30318B] px-5 py-3 backdrop-blur-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">
         {/* LEFT: Logo + Flags */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-10">
           {/* Brand */}
           <Link
             href="/"
@@ -62,7 +62,7 @@ export default function Navbar() {
           </Link>
 
           {/* Flags (desktop only like before) */}
-          <div className="hidden items-center gap-3 md:flex">
+          <div className="hidden items-center gap-5 md:flex">
             {[
               { src: "/flags/uk.png", label: "United Kingdom" },
               { src: "/flags/netherlands.png", label: "Netherlands" },

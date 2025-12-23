@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from 'react-icons/fa';
 
 const CTAs = [
   "Need help? Chat with us!",
@@ -45,19 +46,20 @@ export default function WhatsappFloating() {
   }, []);
 
   return (
-    <div className="fixed bottom-5 right-5 z-[9999] flex flex-col items-end gap-2">
+    <div className="fixed bottom-10 left-10 z-[9999] flex flex-col items-start gap-2">
+
       {/* CTA Bubble */}
       <AnimatePresence>
         {visible && (
           <motion.div
-            initial={{ opacity: 0, x: 20, y: 10 }}
+            initial={{ opacity: 0, x: 10, y: 10 }}
             animate={{ opacity: 1, x: 0, y: 0 }}
-            exit={{ opacity: 0, x: 20, y: 10 }}
+            exit={{ opacity: 0, x: 10, y: 10 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
-            className="px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md border border-cyan-500/30 shadow-[0_0_20px_rgba(34,211,238,0.4)] text-black text-sm font-medium"
-          >
+            className="self-end mb-1 px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md border border-cyan-500/30 shadow-[0_0_20px_rgba(34,211,238,0.4)] text-black text-sm font-medium max-w-[220px]">
             {CTAs[index]}
           </motion.div>
+
         )}
       </AnimatePresence>
 
@@ -66,8 +68,8 @@ export default function WhatsappFloating() {
         href="https://wa.me/+923361809809"
         target="_blank"
         rel="noreferrer"
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 shadow-[0_0_20px_rgba(52,211,153,0.8)] hover:shadow-[0_0_30px_rgba(52,211,153,1)] transition cursor-pointer">
-        <MessageCircle className="h-12 w-12 text-white" />
+        className="flex h-12 w-12 lg:h-24 lg:w-24 items-center justify-center rounded-full bg-emerald-500 shadow-[0_0_20px_rgba(52,211,153,0.8)] hover:shadow-[0_0_30px_rgba(52,211,153,1)] transition cursor-pointer">
+        <FaWhatsapp className="w-12 h-12 lg:h-24 lg:w-24 text-white" />
       </a>
     </div>
   );

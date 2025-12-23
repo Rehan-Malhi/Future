@@ -107,8 +107,6 @@ const [muted, setMuted] = useState(true);
         <div className="lg:col-span-7">
           <div className="group relative overflow-hidden rounded-3xl border border-orange-500/15 bg-gradient-to-b from-slate-900/70 via-slate-950/80 to-slate-950/90 p-[1px] shadow-[0_0_40px_rgba(0,0,0,0.55)]">
             <div className="relative overflow-hidden rounded-3xl bg-[rgba(255,255,255,0.03)]">
-              {/* glow */}
-              <div className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-orange-500/10 blur-3xl group-hover:bg-orange-400/20" />
 
               <div className="relative aspect-video w-full overflow-hidden">
                 <video

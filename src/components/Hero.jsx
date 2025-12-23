@@ -40,43 +40,45 @@ export default function HeroFutureStar() {
 
   return (
     <>
-      <section className="min-h-[70vh] flex items-center justify-center md:px-8 text-black">
+      <section className="min-h-[70vh] flex items-start lg:items-center justify-center px-4 md:px-8 text-black">
+
         <div className="w-full max-w-6xl flex flex-col-reverse lg:flex-row items-stretch justify-between lg:gap-10">
           {/* LEFT SIDE */}
-          <div className="flex-1 max-w-xl flex flex-col justify-center">
-            <div className="flex font-bold items-center border border-[#FF7A00]/30 bg-[#FF7A00]/5 my-6 w-64 lg:w-96 gap-2 rounded-full px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[#FF7A00]">
-              <span className="h-1.5 w-1.5 rounded-full bg-orange-400" />
-              Future-Built Sportswear Manufacturing
-            </div>
-            <h1 className="text-[30px] sm:text-4xl md:text-5xl font-semibold tracking-tight text-[#30318B] leading-[1.05]">
-              Custom Sportswear,{" "}
+          <div className="flex-1 max-w-xl flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
+
+            {/* Heading */}
+            <h1 className="text-[32px] sm:text-[26px] md:text-5xl font-semibold tracking-tight text-[#30318B] leading-tight">
+              Custom Sportswear,{" "} <br/>
               <span className="text-[#FF7A00]">Made for Teams</span>
             </h1>
 
-            <p className="mt-4 text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed text-black">
+            {/* Description */}
+            <p className="mt-3 text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed text-black max-w-xs">
               Football kits, jackets & training wear—export-quality OEM/ODM production at scale.
             </p>
 
-            <div className="mt-6 flex flex-col sm:flex-row gap-3">
+            {/* Buttons */}
+            <div className="mt-5 flex flex-col sm:flex-row gap-3 items-center lg:items-start">
+
               <Link
                 href="/contact"
-                className="w-full sm:w-auto inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-semibold text-white bg-[#FF7A00] hover:bg-[#e56e00] transition active:scale-[0.98]"
-              >
+                className="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm sm:text-base font-semibold text-white bg-[#FF7A00] hover:bg-[#e56e00] transition active:scale-[0.98]">
                 Get a Custom Quote →
               </Link>
 
               <Link
                 href="/products"
-                className="w-full sm:w-auto inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-semibold border border-slate-500/70 text-black bg-transparent hover:bg-slate-900/60 hover:text-white hover:border-cyan-400 transition"
-              >
+                className="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm sm:text-base font-semibold border border-slate-500/70 text-black bg-transparent hover:bg-slate-900/60 hover:text-white hover:border-cyan-400 transition">
                 Explore Products
               </Link>
             </div>
 
-            <p className="mt-4 text-xs text-black">
+            {/* Footnote */}
+            <p className="mt-4 text-[11px] sm:text-xs text-black">
               Low minimums • Fast sampling • Worldwide shipping
             </p>
           </div>
+
 
           {/* RIGHT SIDE – FULL WIDTH BLUE IMAGE PREVIEW */}
           <div className="flex-1 flex items-center">
@@ -99,7 +101,7 @@ export default function HeroFutureStar() {
                         alt={active.name}
                         fill
                         priority
-                        className="object-contain rounded-2xl p-8 sm:p-10 md:p-12"
+                        className="object-contain rounded-2xl lg:p-8"
 
                       />
                     </div>
@@ -109,7 +111,7 @@ export default function HeroFutureStar() {
               </div>
               {/* DOTS */}
               {HERO_SLIDES.length > 1 && (
-                <div className="mt-3 flex items-center justify-center gap-2">
+                <div className="lg:mt-3 flex items-center justify-center gap-2">
                   {HERO_SLIDES.map((_, i) => (
                     <button
                       key={i}
@@ -130,7 +132,7 @@ export default function HeroFutureStar() {
       </section>
 
       {/* TRUST LINE */}
-      <div className="lg:pt-2 flex ml-6 lg:ml-0 flex-col mb-8 mt-10 lg:mt-0 lg:mb-8 lg:flex-row items-start justify-start lg:justify-center lg:items-center w-full gap-4 lg:gap-24">
+      <div className="lg:pt-2 mx-auto flex flex-col mb-8 mt-10 lg:mt-0 lg:mb-8 lg:flex-row items-start justify-start lg:justify-center lg:items-center w-[100%] mx-auto gap-4 lg:gap-24">
         <h1 className="text-xl lg:text-2xl mb-4 text-black">⭐ Trusted By 100+ Brands</h1>
         <h1 className="text-xl lg:text-2xl mb-4 text-black">⭐ Fast Sampling: 5–7 Days</h1>
         <h1 className="text-xl lg:text-2xl mb-4 text-black">⭐ Over 1,500+ Products Delivered</h1>

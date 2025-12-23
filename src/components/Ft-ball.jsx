@@ -47,7 +47,7 @@ const FeaturedKits = () => {
     >
       <div className="relative flex h-full flex-col rounded-3xl bg-[rgba(255,255,255,0.03)]">
         {/* 🔥 IMAGE TOP (with hover zoom) */}
-        <div className="relative h-[400px] w-full overflow-hidden rounded-t-3xl">
+        <div className="relative h-[470px] w-full overflow-hidden rounded-t-3xl">
           <Image
             src={item.img}
             alt={item.name}
@@ -57,8 +57,6 @@ const FeaturedKits = () => {
         </div>
 
         <div className="px-5 py-5 sm:px-6 sm:py-6">
-          {/* glow */}
-          <div className="pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full bg-orange-500/10 blur-2xl group-hover:bg-orange-400/20" />
 
           {/* Icon + Title */}
           <div className="mb-4 flex items-center gap-3">
@@ -122,16 +120,6 @@ const FeaturedKits = () => {
           {categories.map((item) => (
             <Card key={item.name} item={item} />
           ))}
-        </div>
-
-        {/* Mobile Show More / Less Button */}
-        <div className="flex justify-center md:hidden">
-          <button
-            onClick={() => setShowAllMobile((v) => !v)}
-            className="rounded-full border border-orange-500/30 bg-orange-500/10 px-6 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-orange-300 transition hover:bg-orange-500/20"
-          >
-            {showAllMobile ? "Show Less" : "Show More"}
-          </button>
         </div>
       </div>
     </section>
