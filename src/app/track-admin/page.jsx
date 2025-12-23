@@ -6,7 +6,7 @@ import { ref, get, set } from "firebase/database";
 
 // 🔐 SUPER SIMPLE CLIENT-SIDE PASSWORD
 // 👉 Change this to whatever you want.
-// For real security, do this on the server / with proper auth.
+// For real security, do this on the server / with proper auth
 const ADMIN_PASSWORD = "Future Star-admin-2024";
 
 const defaultStates = [
