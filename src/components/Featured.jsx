@@ -26,9 +26,9 @@ const categories = [
     details: ["320–380 GSM fleece", "Oversized & regular fits", "Zippers & pullovers"],
   },
   {
-    name: "Tracksuits",
+    name: "Raincoat",
     tag: "Warmups & Travel",
-    img: "/products/raincoat/white.jpg",
+    img: "/products/raincoat/awhite1.jpg",
     link: "/raincoat",
     description:
       "Sharp, tapered tracksuits for travel, pre-match and lifestyle collections.",

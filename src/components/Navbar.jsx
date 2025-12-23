@@ -53,7 +53,7 @@ export default function Navbar() {
             className="text-xl bg-white p-1 font-extrabold tracking-tight"
           >
             <Image
-              src="/logo.png"
+              src="/logo.jpg"
               alt="Future Star Logo"
               width={50}
               height={50}
