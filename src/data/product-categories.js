@@ -2,6 +2,31 @@
 
 export const PRODUCT_CATEGORIES = [
   {
+    id: "pre-balls",
+    category: "Premium Footballs",
+    heroImage: "/products/balls/card-sake/1.png",
+  },
+    {
+    id: "stylish-balls",
+    category: "Stylish Footballs",
+    heroImage: "/products/balls/card-sake/2.png",
+  },
+    {
+    id: "kits",
+    category: "Soccer Kit",
+    heroImage: "/products/kits/grey.jpg",
+  },
+    {
+    id: "tracks",
+    category: "Track-suit",
+    heroImage: "/products/tracks/grey.png",
+  },
+  {
+    id: "raincoat",
+    category: "Raincoat",
+    heroImage: "/products/raincoat/adark-blue1.jpg",
+  },
+  {
     id: "tshirt",
     category: "t-Shirts",
     heroImage: "/products/tshirt/neon.jpg",
@@ -17,14 +42,14 @@ export const PRODUCT_CATEGORIES = [
     heroImage: "/products/lynx-tracksuit-jacket/black.jpg",
   },
   {
+    id: "tracksuits",
+    category: "Tracksuit",
+    heroImage: "/products/tracksuits/1.jpg",
+  },
+  {
     id: "plain-sweatshirts",
     category: "Plain Sweatshirts",
     heroImage: "/products/plain-sweatshirts/brown.jpg",
-  },
-  {
-    id: "raincoat",
-    category: "Raincoat",
-    heroImage: "/products/raincoat/adark-blue1.jpg",
   },
   {
     id: "zipped-hoodies",
@@ -71,29 +96,7 @@ export const PRODUCT_CATEGORIES = [
     category: "Cropped Pants",
     heroImage: "/products/lynx-cropped/black.jpg",
   },
-  {
-    id: "tracks",
-    category: "Track-suit",
-    heroImage: "/products/tracks/grey.png",
-  },
-  {
-    id: "kits",
-    category: "Soccer Kit",
-    heroImage: "/products/kits/grey.jpg",
-  },
-  {
-    id: "balls",
-    category: "Footballs",
-    heroImage: "/products/balls/10.png",
-  },
-  {
-    id: "stylish-balls",
-    category: "Stylish Footballs",
-    heroImage: "/products/balls/6.png",
-  },
-  {
-    id: "pre-balls",
-    category: "Premium Footballs",
-    heroImage: "/products/balls/1.png",
-  },
+
+
+
 ];

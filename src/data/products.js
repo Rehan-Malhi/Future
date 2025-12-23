@@ -198,7 +198,7 @@ export const PRODUCTS = [
     slug: "kits",
     category: "Soccer Kit",
     title: "Soccer Kit",
-    image: "/products/kits/grey.jpg",
+    image: "/products/kits/black.jpg",
     thumbnails: [
       "/products/kits/black.jpg",
       "/products/kits/grey.jpg",
@@ -468,44 +468,49 @@ export const PRODUCTS = [
       },
     ],
   },
+
   {
-    slug: "balls",
-    category: "FootBalls",
-    title: "FootBalls",
-    image: "/products/balls/9.png",
+    slug: "pre-balls",
+    category: "Premium FootBalls",
+    title: "Match-quality Ball hand stitch",
+    image: "/products/balls/r14.jpg",
     thumbnails: [
-      "/products/balls/9.png",
-      "/products/balls/10.png",
-      "/products/balls/11.png",
-      "/products/balls/12.png",
-      "/products/balls/13.png",
-      "/products/balls/14.png",
-      "/products/balls/15.png",
+      "/products/balls/r.jpg",
+      "/products/balls/r2.jpg",
+      "/products/balls/r3.jpg",
+      "/products/balls/r4.jpg",
+      "/products/balls/r9.jpg",
+      "/products/balls/r10.jpg",
+      "/products/balls/r11.jpg",
+      "/products/balls/r12.jpg",
+      "/products/balls/r14.jpg",
     ],
     highlights: [
       {
-        heading: "Style",
+        heading: "Luxury Style",
         description:
-          "Simple, clean, and functional in design, this football features a classic panel layout with a balanced color finish for clear visibility on the field. Its straightforward athletic look makes it ideal for casual matches, school games, and regular training sessions.",
+          "A statement of elegance on the pitch, this luxury football showcases a refined surface finish with subtle panel detailing and a perfectly balanced silhouette. Designed to stand out through sophistication rather than excess, it delivers a timeless, elite look suited for professional play, collector editions, and premium brand presentation.",
       },
       {
-        heading: "Characteristics & Composition",
+        heading: "Luxury Characteristics & Composition",
         description:
-          "Made from durable synthetic material, the football is designed to handle frequent use across multiple surfaces. The machine-stithed panel construction supports shape consistency, while the rubber or butyl bladder provides stable air retention and a reliable bounce for everyday play.",
+          "Constructed using premium-grade microfiber leather, this football features a precision-engineered layered core for superior touch and responsiveness. Hand-stitched panels ensure exceptional shape integrity, while the advanced butyl bladder provides long-lasting air retention, stable flight, and a controlled, cushioned feel during high-speed play.",
       },
     ],
   },
   {
-    slug: "pre-balls",
-    category: "Premium FootBalls",
-    title: "Premium FootBalls",
-    image: "/products/balls/1.png",
+    slug: "tracksuits",
+    category: "Tracksuits",
+    title: "Tracksuits",
+    image: "/products/tracksuits/1.jpg",
     thumbnails: [
-      "/products/balls/1.png",
-      "/products/balls/2.png",
-      "/products/balls/3.png",
-      "/products/balls/4.png",
-      "/products/balls/5.png",
+      "/products/tracksuits/1.jpg",
+      "/products/tracksuits/2.jpg",
+      "/products/tracksuits/3.jpg",
+      "/products/tracksuits/4.jpg",
+      "/products/tracksuits/5.jpg",
+      "/products/tracksuits/6.jpg",
+      "/products/tracksuits/7.jpg",
     ],
     highlights: [
       {
@@ -523,12 +528,14 @@ export const PRODUCTS = [
   {
     slug: "stylish-balls",
     category: "Stylish FootBalls",
-    title: "Stylish FootBalls",
-    image: "/products/balls/6.png",
+    title: "Match-quality Ball Hybrid",
+    image: "/products/balls/r13.jpg",
     thumbnails: [
-      "/products/balls/6.png",
-      "/products/balls/7.png",
-      "/products/balls/8.png",
+      "/products/balls/r5.jpg",
+      "/products/balls/r6.jpg",
+      "/products/balls/r7.jpg",
+      "/products/balls/r8.jpg",
+      "/products/balls/r13.jpg",
     ],
     highlights: [
       {

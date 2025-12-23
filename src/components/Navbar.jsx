@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import NavbarSearch from "./NavbarSearch";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navItems = [
@@ -43,22 +44,24 @@ export default function Navbar() {
   return (
     <nav ref={navRef} className="sticky top-0 z-50 w-full">
       {/* Glass navbar */}
-      <div className="mx-auto mt-4 flex max-w-6xl items-center justify-between rounded-2xl border border-white/10 bg-[#30318B] px-5 py-3 backdrop-blur-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">
-
-        {/* Brand */}
-        <Link href="/" className="text-xl bg-white p-1 font-extrabold tracking-tight">
-          <Image
-            src="/logo.png"
-            alt="Future Star Logo"
-            width={40}
-            height={40}
-            className="bg-transparent"
-          />
-        </Link>
-
-        {/* Brand + Flags */}
+      <div className="mx-auto mt-4 flex max-w-[1500px] items-center rounded-2xl border border-white/10 bg-[#30318B] px-5 py-3 backdrop-blur-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">
+        {/* LEFT: Logo + Flags */}
         <div className="flex items-center gap-4">
-          {/* Country Flags */}
+          {/* Brand */}
+          <Link
+            href="/"
+            className="text-xl bg-white p-1 font-extrabold tracking-tight"
+          >
+            <Image
+              src="/logo.png"
+              alt="Future Star Logo"
+              width={50}
+              height={50}
+              className="bg-transparent"
+            />
+          </Link>
+
+          {/* Flags (desktop only like before) */}
           <div className="hidden items-center gap-3 md:flex">
             {[
               { src: "/flags/uk.png", label: "United Kingdom" },
@@ -76,40 +79,47 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Desktop Navigation */}
-        <ul className="hidden items-center gap-8 text-sm font-semibold text-slate-200 md:flex">
-          {navItems.map((item) => (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                className={`relative py-1 transition ${
-                  isActive(item.href)
-                    ? "text-orange-400"
-                    : "text-slate-200 hover:text-orange-300"
-                }`}
-              >
-                {item.label}
+        {/* CENTER: Search (flex-1 so it stays responsive) */}
+        <div className="ml-3 flex flex-1 justify-center">
+          <NavbarSearch />
+        </div>
 
-                {isActive(item.href) && (
-                  <span className="absolute -bottom-1 left-0 h-0.5 w-full rounded-full bg-orange-400 shadow-[0_0_8px_rgba(34,211,238,0.9)]" />
-                )}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {/* RIGHT: Desktop Nav + Mobile Toggle */}
+        <div className="flex items-center gap-3">
+          {/* Desktop Navigation */}
+          <ul className="hidden items-center gap-8 text-sm font-semibold text-slate-200 md:flex">
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className={`relative py-1 transition ${
+                    isActive(item.href)
+                      ? "text-orange-400"
+                      : "text-slate-200 hover:text-orange-300"
+                  }`}
+                >
+                  {item.label}
+                  {isActive(item.href) && (
+                    <span className="absolute -bottom-1 left-0 h-0.5 w-full rounded-full bg-orange-400 shadow-[0_0_8px_rgba(34,211,238,0.9)]" />
+                  )}
+                </Link>
+              </li>
+            ))}
+          </ul>
 
-        {/* Mobile Toggle Button */}
-        <button
-          onClick={() => setOpen(!open)}
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/30 text-slate-100 transition hover:bg-white/10 md:hidden"
-          aria-label="Toggle menu"
-        >
-          {open ? (
-            <XMarkIcon className="h-8 w-8 rotate-90 transition-transform duration-200" />
-          ) : (
-            <Bars3Icon className="h-8 w-8 transition-transform duration-200" />
-          )}
-        </button>
+          {/* Mobile Toggle Button */}
+          <button
+            onClick={() => setOpen(!open)}
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/30 text-slate-100 transition hover:bg-white/10 md:hidden"
+            aria-label="Toggle menu"
+          >
+            {open ? (
+              <XMarkIcon className="h-12 w-12 rotate-90 transition-transform duration-200" />
+            ) : (
+              <Bars3Icon className="h-12 w-12 transition-transform duration-200" />
+            )}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Dropdown */}

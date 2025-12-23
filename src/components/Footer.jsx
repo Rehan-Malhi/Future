@@ -12,13 +12,6 @@ export default function Footer() {
       <div className="pointer-events-none absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-[#FF7A00]/50 to-transparent" />
 
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-      <Image
-        src="/footer.jpg"
-        width="1050"
-        height="254"
-        className="object-contain mb-16 mr-16"
-        alt="footer"
-      />
         <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
           {/* Brand + tagline */}
           <div className="max-w-sm">
