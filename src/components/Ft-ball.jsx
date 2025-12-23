@@ -47,14 +47,14 @@ const FeaturedKits = () => {
     >
       <div className="relative flex h-full flex-col rounded-3xl bg-[rgba(255,255,255,0.03)]">
         {/* 🔥 IMAGE TOP (with hover zoom) */}
-        <div className="relative h-[470px] w-full overflow-hidden rounded-t-3xl">
+        <Link href={`/products/${item.link}`} className="relative h-[470px] w-full overflow-hidden rounded-t-3xl">
           <Image
             src={item.img}
             alt={item.name}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-110"
           />
-        </div>
+        </Link>
 
         <div className="px-5 py-5 sm:px-6 sm:py-6">
 
