@@ -63,11 +63,11 @@ export default function WhatsappFloating() {
 
       {/* WhatsApp Icon */}
       <a
-        href="https://wa.me/03009614214"
+        href="https://wa.me/+923361809809"
         target="_blank"
         rel="noreferrer"
         className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 shadow-[0_0_20px_rgba(52,211,153,0.8)] hover:shadow-[0_0_30px_rgba(52,211,153,1)] transition cursor-pointer">
-        <MessageCircle className="h-6 w-6 text-white" />
+        <MessageCircle className="h-12 w-12 text-white" />
       </a>
     </div>
   );

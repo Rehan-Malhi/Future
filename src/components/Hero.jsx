@@ -44,7 +44,7 @@ export default function HeroFutureStar() {
         <div className="w-full max-w-6xl flex flex-col-reverse lg:flex-row items-stretch justify-between lg:gap-10">
           {/* LEFT SIDE */}
           <div className="flex-1 max-w-xl flex flex-col justify-center">
-            <div className="flex font-bold items-center border border-[#FF7A00]/30 bg-[#FF7A00]/5 my-6 w-96 gap-2 rounded-full px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[#FF7A00]">
+            <div className="flex font-bold items-center border border-[#FF7A00]/30 bg-[#FF7A00]/5 my-6 w-64 lg:w-96 gap-2 rounded-full px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[#FF7A00]">
               <span className="h-1.5 w-1.5 rounded-full bg-orange-400" />
               Future-Built Sportswear Manufacturing
             </div>
