@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { db } from "@/lib/firebase";
+import { db } from "@/lib/Firebase";
 import { ref, get } from "firebase/database";
 
 export default function LoginPage() {

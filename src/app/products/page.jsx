@@ -4,7 +4,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { collection, onSnapshot } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import { db } from "@/lib/Firebase";
 import { PRODUCT_CATEGORIES } from "@/data/product-categories";
 
 export default function ProductsPage() {

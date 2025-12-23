@@ -11,7 +11,7 @@ import { Plus } from "lucide-react";
 
 import { PRODUCTS } from "@/data/products"; // ✅ local first
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import { db } from "@/lib/Firebase";
 
 export default function ProductSlugPage() {
   const params = useParams();
