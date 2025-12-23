@@ -60,6 +60,41 @@ export const PRODUCTS = [
       },
     ],
   },
+  {
+    slug: "tracks",
+    category: "Track-suit",
+    title: "Track-suit",
+    image: "/products/tracks/grey.png",
+    imageHeight: 580,
+    thumbnails: [
+      "/products/tracks/yellow.png",
+      "/products/tracks/neon.png",
+      "/products/tracks/pink.png",
+      "/products/tracks/grey.png",
+      "/products/tracks/sky.png",
+      "/products/tracks/light-purple.png",
+      "/products/tracks/purple.png",
+      "/products/tracks/dark-green.png",
+      "/products/tracks/black.png",
+    ],
+    highlights: [
+      {
+        heading: "Built for Movement",
+        description:
+          "Engineered patterns and stretch-friendly fabrics that move naturally with players during training, travel, and warm-ups.",
+      },
+      {
+        heading: "All-Weather Comfort",
+        description:
+          "Breathable yet durable materials designed to handle changing climates, long sessions, and repeated wear.",
+      },
+      {
+        heading: "Team-Ready Finish",
+        description:
+          "Consistent sizing, clean silhouettes, and branding placement that keeps the entire squad looking unified and professional.",
+      },
+    ],
+  },
 
   {
     slug: "polo-shirts",
@@ -156,6 +191,40 @@ export const PRODUCTS = [
         heading: "Characteristics",
         description:
           "- Composition: Cotton and polyester blend - Suitable for running and outdoor activities - Breathable and comfortable design - Designed for seasonal performance and daily use",
+      },
+    ],
+  },
+  {
+    slug: "kits",
+    category: "Soccer Kit",
+    title: "Soccer Kit",
+    image: "/products/kits/grey.jpg",
+    thumbnails: [
+      "/products/kits/black.jpg",
+      "/products/kits/grey.jpg",
+      "/products/kits/white.png",
+      "/products/kits/yellow.jpg",
+      "/products/kits/red.png",
+      "/products/kits/dark-green.jpg",
+      "/products/kits/sky.jpg",
+      "/products/kits/purple.jpg",
+      "/products/kits/neon.jpg",
+    ],
+    highlights: [
+      {
+        heading: "Match-Day Performance",
+        description:
+          "Lightweight, breathable fabrics designed to keep players cool and focused through high-intensity play.",
+      },
+      {
+        heading: "Athlete-Fit Construction",
+        description:
+          "Ergonomic cuts and stretch zones built for sprinting, tackling, and full-range movement on the pitch.",
+      },
+      {
+        heading: "Color-True & Durable",
+        description:
+          "Sublimation-ready materials that lock in club colors, resist fading, and hold shape after repeated washes.",
       },
     ],
   },
@@ -396,6 +465,81 @@ export const PRODUCTS = [
         heading: "Optimized for Training & Travel",
         description:
           "Designed to perform during warmups, training sessions, and team travel with a refined athletic fit.",
+      },
+    ],
+  },
+  {
+    slug: "balls",
+    category: "FootBalls",
+    title: "FootBalls",
+    image: "/products/balls/9.png",
+    thumbnails: [
+      "/products/balls/9.png",
+      "/products/balls/10.png",
+      "/products/balls/11.png",
+      "/products/balls/12.png",
+      "/products/balls/13.png",
+      "/products/balls/14.png",
+      "/products/balls/15.png",
+    ],
+    highlights: [
+      {
+        heading: "Style",
+        description:
+          "Simple, clean, and functional in design, this football features a classic panel layout with a balanced color finish for clear visibility on the field. Its straightforward athletic look makes it ideal for casual matches, school games, and regular training sessions.",
+      },
+      {
+        heading: "Characteristics & Composition",
+        description:
+          "Made from durable synthetic material, the football is designed to handle frequent use across multiple surfaces. The machine-stithed panel construction supports shape consistency, while the rubber or butyl bladder provides stable air retention and a reliable bounce for everyday play.",
+      },
+    ],
+  },
+  {
+    slug: "pre-balls",
+    category: "Premium FootBalls",
+    title: "Premium FootBalls",
+    image: "/products/balls/1.png",
+    thumbnails: [
+      "/products/balls/1.png",
+      "/products/balls/2.png",
+      "/products/balls/3.png",
+      "/products/balls/4.png",
+      "/products/balls/5.png",
+    ],
+    highlights: [
+      {
+        heading: "Luxury Style",
+        description:
+          "A statement of elegance on the pitch, this luxury football showcases a refined surface finish with subtle panel detailing and a perfectly balanced silhouette. Designed to stand out through sophistication rather than excess, it delivers a timeless, elite look suited for professional play, collector editions, and premium brand presentation.",
+      },
+      {
+        heading: "Luxury Characteristics & Composition",
+        description:
+          "Constructed using premium-grade microfiber leather, this football features a precision-engineered layered core for superior touch and responsiveness. Hand-stitched panels ensure exceptional shape integrity, while the advanced butyl bladder provides long-lasting air retention, stable flight, and a controlled, cushioned feel during high-speed play.",
+      },
+    ],
+  },
+  {
+    slug: "stylish-balls",
+    category: "Stylish FootBalls",
+    title: "Stylish FootBalls",
+    image: "/products/balls/6.png",
+    thumbnails: [
+      "/products/balls/6.png",
+      "/products/balls/7.png",
+      "/products/balls/8.png",
+    ],
+    highlights: [
+      {
+        heading: "Style",
+        description:
+          "Designed with a modern athletic aesthetic, this football features bold panel geometry and a balanced visual contrast that stands out on the pitch. Its streamlined shape and clean surface detailing reflect a professional match-ready look, suitable for training sessions, competitive play, and display.",
+      },
+      {
+        heading: "Characteristics & Composition",
+        description:
+          "Crafted from high-quality synthetic leather, the football is built with a reinforced multi-layer structure for durability and consistent performance. The precision-stitched panels enhance shape retention, while the inner butyl bladder ensures excellent air retention, controlled bounce, and reliable flight accuracy across different playing surfaces.",
       },
     ],
   },

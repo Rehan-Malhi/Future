@@ -17,6 +17,7 @@ const HERO_SLIDES = [
   { name: "imgg-3", src: "/hero-slides/imgg-3.png" },
   { name: "img-4", src: "/hero-slides/img-4.png" },
   { name: "img-5", src: "/hero-slides/img-5.png" },
+  { name: "img-7", src: "/hero-slides/imgg7.png" },
   // { name: "Football", src: "/hero/football.png" },
   // { name: "T-Shirt", src: "/hero/tshirt.png" },
   // { name: "Jacket", src: "/hero/jacket.png" },

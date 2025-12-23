@@ -67,17 +67,19 @@ export default function FaqSection() {
           {faqs.map((item, i) => (
             <div
               key={i}
-              className="rounded-xl border border-slate-800/60 bg-slate-900/60 backdrop-blur-md shadow-[0_0_20px_rgba(0,0,0,0.55)] transition hover:border-[#FF7A00]/60"
+              className="rounded-[100px] border border-slate-800/60 bg-[#30318B] backdrop-blur-md shadow-[0_0_20px_rgba(0,0,0,0.55)] transition hover:border-[#FF7A00]/60"
             >
               <button
                 onClick={() => toggleFAQ(i)}
-                className="w-full flex items-center justify-between px-5 py-4 text-left text-slate-100 font-semibold hover:text-[#FF7A00] transition"
+                className={`w-full flex text-lg items-center justify-between px-5 py-4 text-left font-semibold transition
+  ${openIndex === i ? "text-[#FF7A00]" : "text-white hover:text-[#FF7A00]"}
+`}
+
               >
                 <span>{item.q}</span>
                 <ChevronDown
-                  className={`h-5 w-5 text-[#FFAE42] transition-transform duration-300 ${
-                    openIndex === i ? "rotate-180" : ""
-                  }`}
+                  className={`h-5 w-5 text-[#FFAE42] transition-transform duration-300 ${openIndex === i ? "rotate-180" : ""
+                    }`}
                 />
               </button>
 
@@ -89,7 +91,7 @@ export default function FaqSection() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                   >
-                    <div className="px-5 pb-4 pt-1 text-slate-300/85 text-sm leading-relaxed">
+                    <div className="px-5 pb-4 pt-1 text-white text-md leading-relaxed">
                       {item.a}
                     </div>
                   </motion.div>

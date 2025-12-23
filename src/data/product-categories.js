@@ -71,4 +71,29 @@ export const PRODUCT_CATEGORIES = [
     category: "Cropped Pants",
     heroImage: "/products/lynx-cropped/black.jpg",
   },
+  {
+    id: "tracks",
+    category: "Track-suit",
+    heroImage: "/products/tracks/grey.png",
+  },
+  {
+    id: "kits",
+    category: "Soccer Kit",
+    heroImage: "/products/kits/grey.jpg",
+  },
+  {
+    id: "balls",
+    category: "Footballs",
+    heroImage: "/products/balls/10.png",
+  },
+  {
+    id: "stylish-balls",
+    category: "Stylish Footballs",
+    heroImage: "/products/balls/6.png",
+  },
+  {
+    id: "pre-balls",
+    category: "Premium Footballs",
+    heroImage: "/products/balls/1.png",
+  },
 ];

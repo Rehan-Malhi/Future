@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Instagram, Facebook, Twitter, Mail, PhoneCall } from "lucide-react";
+import { Mail, PhoneCall } from "lucide-react";
+import { FaInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -10,6 +12,13 @@ export default function Footer() {
       <div className="pointer-events-none absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-[#FF7A00]/50 to-transparent" />
 
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+      <Image
+        src="/footer.jpg"
+        width="1050"
+        height="254"
+        className="object-contain mb-16 mr-16"
+        alt="footer"
+      />
         <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
           {/* Brand + tagline */}
           <div className="max-w-sm">
@@ -34,9 +43,9 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Future Star on Instagram"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-[#FF7A00]/40 bg-[#FF7A00]/10 text-[#FFB444] shadow-[0_0_18px_rgba(255,122,0,0.5)] transition hover:bg-[#FF7A00] hover:text-slate-950 hover:shadow-[0_0_26px_rgba(255,122,0,0.9)]"
+                className="flex h-9 w-9 items-center justify-center rounded-full border text-white transition hover:bg-[#FF7A00] hover:text-slate-950 hover:shadow-[0_0_26px_rgba(255,122,0,0.9)]"
               >
-                <Instagram className="h-4 w-4" />
+                <FaInstagram className="h-4 w-4" />
               </a>
               <a
                 href="https://facebook.com"
@@ -45,7 +54,7 @@ export default function Footer() {
                 aria-label="Future Star on Facebook"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-600/50 bg-slate-900 text-slate-200 transition hover:border-[#FF7A00] hover:text-[#FFB444] hover:shadow-[0_0_18px_rgba(255,122,0,0.6)]"
               >
-                <Facebook className="h-4 w-4" />
+                <FaFacebook className="h-4 w-4" />
               </a>
               <a
                 href="https://twitter.com"
@@ -54,7 +63,7 @@ export default function Footer() {
                 aria-label="Future Star on Twitter"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-600/50 bg-slate-900 text-slate-200 transition hover:border-[#FF7A00] hover:text-[#FFB444] hover:shadow-[0_0_18px_rgba(255,122,0,0.6)]"
               >
-                <Twitter className="h-4 w-4" />
+                <FaXTwitter className="h-4 w-4" />
               </a>
               <a
                 href="mailto:hello@futurestarfactory.com"
@@ -64,7 +73,7 @@ export default function Footer() {
                 <Mail className="h-4 w-4" />
               </a>
               <a
-                href="https://wa.me/000000000000"
+                href="https://wa.me/+923361809809"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="WhatsApp Future Star"
@@ -131,18 +140,18 @@ export default function Footer() {
                     href="mailto:hello@futurestarfactory.com"
                     className="transition hover:text-[#FF7A00]"
                   >
-                    hello@futurestarfactory.com
+                    roushanfuturestar@gmail.com
                   </a>
                 </li>
                 <li>
                   <span className="text-slate-400">WhatsApp: </span>
                   <a
-                    href="https://wa.me/000000000000"
+                    href="https://wa.me/+923361809809"
                     target="_blank"
                     rel="noreferrer"
                     className="transition hover:text-[#FF7A00]"
                   >
-                    +00 000 0000000
+                    +92 336 1809809
                   </a>
                 </li>
                 <li className="text-slate-400">

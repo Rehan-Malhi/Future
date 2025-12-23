@@ -61,6 +61,78 @@ const categories = [
       "Breathable shorts for football, running and training with full customization.",
     details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
   },
+  {
+    name: "Zipped Hoodies",
+    tag: "Game & Training",
+    img: "/products/zipped-hoodies/orange.jpg",
+    link:"/zipped-hoodies",
+    description:
+      "Breathable shorts for football, running and training with full customization.",
+    details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+  },
+  {
+    name: "UnZipped-Hoodies",
+    tag: "Game & Training",
+    img: "/products/unzipped-hoodies/skin.jpg",
+    link:"/unzipped-hoodies",
+    description:
+      "Breathable shorts for football, running and training with full customization.",
+    details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+  },
+  {
+    name: "Lynx Cropped",
+    tag: "Game & Training",
+    img: "/products/lynx-cropped/black.jpg",
+    link:"/lynx-cropped",
+    description:
+      "Breathable shorts for football, running and training with full customization.",
+    details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+  },
+  {
+    name: "Shorts",
+    tag: "Game & Training",
+    img: "/products/shorts/yellow.jpg",
+    link:"/shorts",
+    description:
+      "Breathable shorts for football, running and training with full customization.",
+    details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+  },
+  {
+    name: "Road Jackets",
+    tag: "Game & Training",
+    img: "/products/road-jackets/red.jpg",
+    link:"/road-jackets",
+    description:
+      "Breathable shorts for football, running and training with full customization.",
+    details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+  },
+  {
+    name: "snow-jackets",
+    tag: "Game & Training",
+    img: "/products/snow-jackets/black.jpg",
+    link:"/snow-jackets",
+    description:
+      "Breathable shorts for football, running and training with full customization.",
+    details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+  },
+  {
+    name: "lynx-tracksuit-jacket",
+    tag: "Game & Training",
+    img: "/products/lynx-tracksuit-jacket/white.jpg",
+    link:"/lynx-tracksuit-jacket",
+    description:
+      "Breathable shorts for football, running and training with full customization.",
+    details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+  },
+  {
+    name: "sweatshirts",
+    tag: "Game & Training",
+    img: "/products/sweatshirts/black.jpg",
+    link:"/sweatshirts",
+    description:
+      "Breathable shorts for football, running and training with full customization.",
+    details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+  },
 ];
 
 const FeaturedProducts = () => {

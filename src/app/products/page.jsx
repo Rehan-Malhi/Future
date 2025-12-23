@@ -1,23 +1,58 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { PRODUCT_CATEGORIES } from "@/data/product-categories"; // ✅ adjust path if needed
+import { collection, onSnapshot } from "firebase/firestore";
+import { db } from "@/lib/firebase";
+import { PRODUCT_CATEGORIES } from "@/data/product-categories";
 
 export default function ProductsPage() {
-  const categories = useMemo(() => {
-    const unique = Array.from(new Set(PRODUCT_CATEGORIES.map((x) => x.category)));
-    return ["All", ...unique];
+  const [firestoreProducts, setFirestoreProducts] = useState([]);
+
+  /* ===============================
+     🔥 FETCH FIRESTORE PRODUCTS
+     =============================== */
+  useEffect(() => {
+    const unsub = onSnapshot(collection(db, "products"), (snap) => {
+      const rows = snap.docs.map((d) => ({
+        id: d.data().slug || d.id,
+        category: d.data().category,
+        heroImage: d.data().image,
+        imgFit: "cover",
+        imgPos: "center",
+      }));
+      setFirestoreProducts(rows);
+    });
+
+    return () => unsub();
   }, []);
+
+  /* ===============================
+     🧠 MERGE LOCAL + FIRESTORE
+     =============================== */
+  const ALL_PRODUCTS = useMemo(() => {
+    return [...PRODUCT_CATEGORIES, ...firestoreProducts];
+  }, [firestoreProducts]);
+
+  /* ===============================
+     🧠 CATEGORY LIST
+     =============================== */
+  const categories = useMemo(() => {
+    const unique = Array.from(new Set(ALL_PRODUCTS.map((x) => x.category)));
+    return ["All", ...unique];
+  }, [ALL_PRODUCTS]);
 
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredCards = useMemo(() => {
-    if (activeCategory === "All") return PRODUCT_CATEGORIES;
-    return PRODUCT_CATEGORIES.filter((x) => x.category === activeCategory);
-  }, [activeCategory]);
+    if (activeCategory === "All") return ALL_PRODUCTS;
+    return ALL_PRODUCTS.filter((x) => x.category === activeCategory);
+  }, [activeCategory, ALL_PRODUCTS]);
 
+  /* ===============================
+     🧩 UI (UNCHANGED)
+     =============================== */
   return (
     <section className="min-h-screen py-10 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
@@ -63,19 +98,18 @@ export default function ProductsPage() {
           </div>
         </div>
 
-        {/* GRID — 3 columns */}
+        {/* GRID */}
         <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
           {filteredCards.map((card) => (
             <div key={card.id} className="flex flex-col gap-3">
-              {/* CARD */}
               <article className="group relative overflow-hidden rounded-3xl border border-orange-500/15 bg-[#30318B] px-[5px] pt-[5px] transition-transform duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_40px_rgba(34,211,238,0.35)]">
                 <div className="relative flex h-full flex-col rounded-3xl bg-[rgba(255,255,255,0.03)] overflow-hidden">
                   <Link
                     href={`/products/${card.id}`}
                     className={[
-                      "relative block w-full overflow-hidden rounded-t-3xl", // ✅ clips image
+                      "relative block w-full overflow-hidden rounded-t-3xl",
                       card.imgHeightClass ??
-                        "h-[200px] sm:h-[420px] lg:h-[520px]", // ✅ responsive height (keeps your aspect feel)
+                        "h-[200px] sm:h-[420px] lg:h-[520px]",
                     ].join(" ")}
                   >
                     <Image
@@ -85,8 +119,8 @@ export default function ProductsPage() {
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="transition-transform duration-500 group-hover:scale-110"
                       style={{
-                        objectFit: card.imgFit ?? "cover", // ✅ cover/contain per product
-                        objectPosition: card.imgPos ?? "center", // ✅ position per product
+                        objectFit: card.imgFit ?? "cover",
+                        objectPosition: card.imgPos ?? "center",
                       }}
                     />
                   </Link>
@@ -95,7 +129,12 @@ export default function ProductsPage() {
                     <p className="text-[9px] lg:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#FFAE42]">
                       {card.category}
                     </p>
-                    <Link href={`/products/${card.id}`} className="text-[9px] underline lg:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#FFAE42]">view all</Link>
+                    <Link
+                      href={`/products/${card.id}`}
+                      className="text-[9px] underline lg:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#FFAE42]"
+                    >
+                      view all
+                    </Link>
                   </div>
                 </div>
               </article>

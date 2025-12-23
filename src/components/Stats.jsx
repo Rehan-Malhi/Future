@@ -70,7 +70,7 @@ export default function FutureStarStatsSection() {
             {STATS.map((stat) => (
               <div
                 key={stat.label}
-                className="group relative overflow-hidden rounded-2xl border border-slate-700/70 bg-slate-900/70 p-4 sm:p-5 shadow-lg shadow-black/40 backdrop-blur-md transition-transform duration-300 hover:-translate-y-1 hover:border-[#FF7A00]/70"
+                className="group relative overflow-hidden rounded-2xl border border-slate-700/70 bg-[#30318B] p-4 sm:p-5 shadow-lg shadow-black/40 backdrop-blur-md transition-transform duration-300 hover:-translate-y-1 hover:border-[#FF7A00]/70"
               >
                 <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#FF7A00]/15 via-[#0056D2]/10 to-transparent" />
@@ -89,7 +89,7 @@ export default function FutureStarStatsSection() {
 
         {/* Right: Simple bar chart + highlight card */}
         <div className="flex flex-col justify-between gap-6 lg:pl-6">
-          <div className="rounded-2xl border border-slate-700/80 bg-slate-900/80 p-5 sm:p-6 shadow-xl shadow-black/50 backdrop-blur-xl">
+          <div className="rounded-2xl border border-slate-700/80 bg-[#30318B] p-5 sm:p-6 shadow-xl shadow-black/50 backdrop-blur-xl">
             <div className="flex items-center justify-between gap-2">
               <div>
                 <p className="text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
@@ -130,7 +130,7 @@ export default function FutureStarStatsSection() {
                         <div className="relative flex h-full w-full items-end justify-center">
                           <div className="relative flex h-full w-7 sm:w-9 items-end justify-center">
                             {/* Track */}
-                            <div className="absolute bottom-5 h-[75%] w-px rounded-full bg-slate-700/70" />
+                            <div className="absolute bottom-5 h-[75%] w-px rounded-full bg-[#30318B]" />
                             {/* Bar */}
                             <div
                               className="relative z-10 w-full rounded-full bg-gradient-to-t from-[#0056D2] via-[#2F6BFF] to-[#FF7A00] shadow-[0_0_24px_rgba(0,86,210,0.55)] transition-all duration-300 hover:-translate-y-1.5"
@@ -156,7 +156,7 @@ export default function FutureStarStatsSection() {
             </div>
 
             {/* Bottom highlight */}
-            <div className="mt-5 flex flex-col gap-3 rounded-xl border border-slate-700/70 bg-slate-950/50 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
+            <div className="mt-5 flex flex-col gap-3 rounded-xl border border-slate-700/70 bg-[#30318B] px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p className="text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
                   Production Snapshot

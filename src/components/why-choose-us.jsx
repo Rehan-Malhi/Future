@@ -16,13 +16,13 @@ export default function WhyChooseUs() {
           </p>
 
           {/* IMAGE */}
-          <div className="rounded-xl overflow-hidden h-[250px] lg:h-[380px] shadow-xl border border-white/10">
+          <div className="rounded-xl h-[250px] lg:h-[525px] shadow-xl border border-white/10">
             <Image
-              src="/why-choose2.jpg" // replace with real image
-              width={1990}
-              height={1900}
+              src="/why-choose.png" // replace with real image
+              width={390}
+              height={300}
               alt="Future Star Team"
-              className="w-full object-cover scale-165"
+              className="w-full object-contain"
             />
           </div>
         </div>
@@ -32,8 +32,7 @@ export default function WhyChooseUs() {
 
           {/* Card 1 */}
           <div className="p-5 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 shadow-[0_0_20px_rgba(34,211,238,0.12)]">
-            <h3 className="font-bold text-lg text-[#FF7E23] mb-2 flex items-center gap-2">
-              <span className="text-[#FF7E23] text-xl">⚙️</span>
+            <h3 className="font-bold text-xl text-[#FF7E23] mb-2 flex items-center gap-2">
               Precision Sportswear Manufacturing
             </h3>
             <p className="text-black text-sm leading-relaxed">
@@ -43,8 +42,7 @@ export default function WhyChooseUs() {
 
           {/* Card 2 */}
           <div className="p-5 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 shadow-[0_0_20px_rgba(34,211,238,0.12)]">
-            <h3 className="font-bold text-lg text-[#FF7E23] mb-2 flex items-center gap-2">
-              <span className="text-cyan-400 text-xl">⚡</span>
+            <h3 className="font-bold text-xl text-[#FF7E23] mb-2 flex items-center gap-2">
               Fast Sampling & Prototyping
             </h3>
             <p className="text-black text-sm leading-relaxed">
@@ -54,8 +52,7 @@ export default function WhyChooseUs() {
 
           {/* Card 3 */}
           <div className="p-5 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 shadow-[0_0_20px_rgba(34,211,238,0.12)]">
-            <h3 className="font-bold text-lg text-[#FF7E23] mb-2 flex items-center gap-2">
-              <span className="text-cyan-400 text-xl">🔒</span>
+            <h3 className="font-bold text-xl text-[#FF7E23] mb-2 flex items-center gap-2">
               Strict Quality Control
             </h3>
             <p className="text-black text-sm leading-relaxed">
@@ -65,8 +62,7 @@ export default function WhyChooseUs() {
 
           {/* Card 4 */}
           <div className="p-5 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 shadow-[0_0_20px_rgba(34,211,238,0.12)]">
-            <h3 className="font-bold text-lg text-[#FF7E23] mb-2 flex items-center gap-2">
-              <span className="text-cyan-400 text-xl">🌍</span>
+            <h3 className="font-bold text-xl text-[#FF7E23] mb-2 flex items-center gap-2">
               Global Production & Fulfillment
             </h3>
             <p className="text-black text-sm leading-relaxed">
