@@ -6,32 +6,32 @@ const moments = [
   {
     title: "Pattern Cutting",
     caption: "Laser-cut panels prepared for bulk orders.",
-    src: "/moments/img-1.png",
+    src: "/factory/1.png",
   },
   {
     title: "Fabric Inspection",
     caption: "Every roll checked for shade and defects.",
-    src: "/moments/img-2.png",
+    src: "/factory/2.png",
   },
   {
     title: "Printing Zone",
     caption: "Screen & sublimation prints in full motion.",
-    src: "/moments/img-3.png",
+    src: "/factory/3.png",
   },
   {
     title: "Embroidery Room",
     caption: "Club crests & logos stitched with precision.",
-    src: "/moments/img-4.png",
+    src: "/factory/4.png",
   },
   {
     title: "Stitching Line",
     caption: "Highly trained operators on production lines.",
-    src: "/moments/img-5.png",
+    src: "/factory/5.png",
   },
   {
     title: "Quality Check",
     caption: "Measurement, stitching and branding verified.",
-    src: "/moments/img-6.png",
+    src: "/factory/6.png",
   },
 ];
 
@@ -71,7 +71,7 @@ export default function FactoryMomentsGallery() {
               className="group relative overflow-hidden rounded-3xl border border-slate-700/40 bg-slate-900/40 shadow-[0_0_24px_rgba(0,0,0,0.65)] backdrop-blur-md transition-all duration-300 hover:border-[#FF7A00]/50"
             >
               {/* Image */}
-            <div className="relative h-48 sm:h-48 md:h-52 lg:h-56 w-full overflow-hidden">
+            <div className="relative h-56 sm:h-76 md:h-84 lg:h-96 w-full overflow-hidden">
 
                 <Image
                   src={m.src}

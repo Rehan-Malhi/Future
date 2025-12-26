@@ -7,6 +7,33 @@ import Link from "next/link";
 import { Shirt } from "lucide-react";
 
 const categories = [
+      {
+        name: "Soccer Kits",
+        tag: "Game & Training",
+        img: "/products/kits/black.jpg",
+        link:"/kits",
+        description:
+        "Breathable shorts for football, running and training with full customization.",
+        details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+    },
+    {
+        name: "Stylish FootBalls",
+        tag: "Game & Training",
+        img: "/products/balls/card-sake/2.png",
+        link:"/stylish-balls",
+        description:
+        "Breathable shorts for football, running and training with full customization.",
+        details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+    },
+    {
+      name: "Premium Footballs",
+      tag: "Game & Training",
+      img: "/products/balls/card-sake/1.png",
+      link:"/pre-balls",
+      description:
+        "Breathable shorts for football, running and training with full customization.",
+      details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+    },
   {
     name: "tshirt",
     tag: "Match & Training",
@@ -44,10 +71,46 @@ const categories = [
     details: ["Rib cuffs or open hem", "Elastic waistband", "Custom labels & trims"],
   },
   {
+    name: "Tracksuits",
+    tag: "Casual Wearing",
+    img: "/products/tracksuits/e1.jpg",
+    link:"/tracksuits",
+    description:
+      "Performance joggers and woven pants ready for gyms, teams and streetwear drops.",
+    details: ["Rib cuffs or open hem", "Elastic waistband", "Custom labels & trims"],
+  },
+  {
+    name: "Street Sweatshirt",
+    tag: "Casual Wearing",
+    img: "/products/street-sweatshirt/grey.jpg",
+    link:"/street-sweatshirt",
+    description:
+      "Performance joggers and woven pants ready for gyms, teams and streetwear drops.",
+    details: ["Rib cuffs or open hem", "Elastic waistband", "Custom labels & trims"],
+  },
+  {
     name: "T-Shirts",
     tag: "Essentials & Merch",
     img: "/products/tracksuit-jacket/green.jpg",
     link:"/tracksuit-jacket",
+    description:
+      "Premium tees for merchandise, fanwear and daily basics in multiple fits.",
+    details: ["180–240 GSM cotton", "Screen & DTG print", "Oversized & boxy fits"],
+  },
+  {
+    name: "Lynx Long Pants",
+    tag: "Essentials & Merch",
+    img: "/products/lynx-long-pants/black.jpg",
+    link:"/lynx-long-pants",
+    description:
+      "Premium tees for merchandise, fanwear and daily basics in multiple fits.",
+    details: ["180–240 GSM cotton", "Screen & DTG print", "Oversized & boxy fits"],
+  },
+  {
+    name: "Tracksuit",
+    tag: "Essentials & Merch",
+    img: "/products/tracks/black.png",
+    link:"/tracks",
     description:
       "Premium tees for merchandise, fanwear and daily basics in multiple fits.",
     details: ["180–240 GSM cotton", "Screen & DTG print", "Oversized & boxy fits"],
@@ -107,6 +170,24 @@ const categories = [
     details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
   },
   {
+    name: "Montes Negros Sweatshirts",
+    tag: "Game & Training",
+    img: "/products/montes-negro-sweatshirt/pink.jpg",
+    link:"/montes-negro-sweatshirt",
+    description:
+      "Breathable shorts for football, running and training with full customization.",
+    details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+  },
+  {
+    name: "Premium Trousers",
+    tag: "Game & Training",
+    img: "/products/trousersh/grey.jpg",
+    link:"/trousersh",
+    description:
+      "Breathable shorts for football, running and training with full customization.",
+    details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+  },
+  {
     name: "snow-jackets",
     tag: "Game & Training",
     img: "/products/snow-jackets/black.jpg",
@@ -133,6 +214,16 @@ const categories = [
       "Breathable shorts for football, running and training with full customization.",
     details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
   },
+  {
+    name: "Lynx Sweatshirt",
+    tag: "Game & Training",
+    img: "/products/lynx-sweatshirt/black.jpg",
+    link:"/lynx-sweatshirt",
+    description:
+      "Breathable shorts for football, running and training with full customization.",
+    details: ["Mesh or interlock", "Drawcord waist", "Club crests & numbers"],
+  },
+  
 ];
 
 const FeaturedProducts = () => {
@@ -146,7 +237,7 @@ const FeaturedProducts = () => {
     >
       <div className="relative flex h-full flex-col rounded-3xl bg-[rgba(255,255,255,0.03)]">
         {/* 🔥 IMAGE TOP (with hover zoom) */}
-        <Link href={`/products/${item.link}`} className="relative h-[470px] w-full overflow-hidden rounded-t-3xl">
+        <Link href={`/products/${item.link}`} className="relative h-[410px] w-full overflow-hidden rounded-t-3xl">
           <Image
             src={item.img}
             alt={item.name}

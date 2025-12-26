@@ -6,20 +6,30 @@ export const PRODUCT_CATEGORIES = [
     category: "Premium Footballs",
     heroImage: "/products/balls/card-sake/1.png",
   },
-    {
+  {
     id: "stylish-balls",
     category: "Stylish Footballs",
     heroImage: "/products/balls/card-sake/2.png",
   },
-    {
+  {
     id: "kits",
     category: "Soccer Kit",
     heroImage: "/products/kits/grey.jpg",
   },
-    {
+  {
     id: "tracks",
     category: "Track-suit",
     heroImage: "/products/tracks/grey.png",
+  },
+  {
+    id: "trousersh",
+    category: "Premium Trousers",
+    heroImage: "/products/trousersh/grey.jpg",
+  },
+  {
+    id: "montes-negro-sweatshirt",
+    category: "Montes Negros Sweatshirt",
+    heroImage: "/products/montes-negro-sweatshirt/pink.jpg",
   },
   {
     id: "raincoat",
@@ -42,14 +52,24 @@ export const PRODUCT_CATEGORIES = [
     heroImage: "/products/lynx-tracksuit-jacket/black.jpg",
   },
   {
+    id: "lynx-sweatshirt",
+    category: "Lynx Sweatshirt",
+    heroImage: "/products/lynx-sweatshirt/black.jpg",
+  },
+  {
     id: "tracksuits",
     category: "Tracksuit",
-    heroImage: "/products/tracksuits/1.jpg",
+    heroImage: "/products/tracksuits/e1.jpg",
   },
   {
     id: "plain-sweatshirts",
     category: "Plain Sweatshirts",
     heroImage: "/products/plain-sweatshirts/brown.jpg",
+  },
+  {
+    id: "street-sweatshirt",
+    category: "Street Sweatshirts",
+    heroImage: "/products/street-sweatshirt/grey.jpg",
   },
   {
     id: "zipped-hoodies",
@@ -95,6 +115,11 @@ export const PRODUCT_CATEGORIES = [
     id: "lynx-cropped",
     category: "Cropped Pants",
     heroImage: "/products/lynx-cropped/black.jpg",
+  },
+  {
+    id: "lynx-long-pants",
+    category: "Lynx Long Pants",
+    heroImage: "/products/lynx-long-pants/pink.jpg",
   },
 
 

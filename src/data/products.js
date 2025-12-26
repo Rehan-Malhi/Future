@@ -476,7 +476,6 @@ export const PRODUCTS = [
     image: "/products/balls/r14.jpg",
     thumbnails: [
       "/products/balls/r.jpg",
-      "/products/balls/r2.jpg",
       "/products/balls/r3.jpg",
       "/products/balls/r4.jpg",
       "/products/balls/r9.jpg",
@@ -484,6 +483,129 @@ export const PRODUCTS = [
       "/products/balls/r11.jpg",
       "/products/balls/r12.jpg",
       "/products/balls/r14.jpg",
+      "/products/balls/r2.jpg",
+    ],
+    highlights: [
+      {
+        heading: "Luxury Style",
+        description:
+          "A statement of elegance on the pitch, this luxury football showcases a refined surface finish with subtle panel detailing and a perfectly balanced silhouette. Designed to stand out through sophistication rather than excess, it delivers a timeless, elite look suited for professional play, collector editions, and premium brand presentation.",
+      },
+      {
+        heading: "Luxury Characteristics & Composition",
+        description:
+          "Constructed using premium-grade microfiber leather, this football features a precision-engineered layered core for superior touch and responsiveness. Hand-stitched panels ensure exceptional shape integrity, while the advanced butyl bladder provides long-lasting air retention, stable flight, and a controlled, cushioned feel during high-speed play.",
+      },
+    ],
+  },
+  {
+    slug: "lynx-long-pants",
+    category: "Lynx Long Pants",
+    title: "Lynx long Pants",
+    image: "/products/lynx-long-pants/pink.jpg",
+    thumbnails: [
+      "/products/lynx-long-pants/pink.jpg",
+      "/products/lynx-long-pants/black.jpg",
+      "/products/lynx-long-pants/blue.jpg",
+    ],
+    highlights: [
+      {
+        heading: "Luxury Style",
+        description:
+          "A statement of elegance on the pitch, this luxury football showcases a refined surface finish with subtle panel detailing and a perfectly balanced silhouette. Designed to stand out through sophistication rather than excess, it delivers a timeless, elite look suited for professional play, collector editions, and premium brand presentation.",
+      },
+      {
+        heading: "Luxury Characteristics & Composition",
+        description:
+          "Constructed using premium-grade microfiber leather, this football features a precision-engineered layered core for superior touch and responsiveness. Hand-stitched panels ensure exceptional shape integrity, while the advanced butyl bladder provides long-lasting air retention, stable flight, and a controlled, cushioned feel during high-speed play.",
+      },
+    ],
+  },
+  {
+    slug: "montes-negro-sweatshirt",
+    category: "Montes Negro Sweatshirt",
+    title: "Montes Negro Sweatshirt",
+    image: "/products/montes-negro-sweatshirt/pink.jpg",
+    thumbnails: [
+      "/products/montes-negro-sweatshirt/pink.jpg",
+      "/products/montes-negro-sweatshirt/green.jpg",
+      "/products/montes-negro-sweatshirt/blue.jpg",
+    ],
+    highlights: [
+      {
+        heading: "Luxury Style",
+        description:
+          "A statement of elegance on the pitch, this luxury football showcases a refined surface finish with subtle panel detailing and a perfectly balanced silhouette. Designed to stand out through sophistication rather than excess, it delivers a timeless, elite look suited for professional play, collector editions, and premium brand presentation.",
+      },
+      {
+        heading: "Luxury Characteristics & Composition",
+        description:
+          "Constructed using premium-grade microfiber leather, this football features a precision-engineered layered core for superior touch and responsiveness. Hand-stitched panels ensure exceptional shape integrity, while the advanced butyl bladder provides long-lasting air retention, stable flight, and a controlled, cushioned feel during high-speed play.",
+      },
+    ],
+  },
+  {
+    slug: "trousersh",
+    category: "Premiuim Trousers",
+    title: "Premiuim Trousers",
+    image: "/products/trousersh/grey.jpg",
+    thumbnails: [
+      "/products/trousersh/grey.jpg",
+      "/products/trousersh/dark-grey.jpg",
+      "/products/trousersh/black.jpg",
+      "/products/trousersh/green.jpg",
+      "/products/trousersh/sky.jpg",
+      "/products/trousersh/skin.jpg",
+      "/products/trousersh/white.jpg",
+      "/products/trousersh/royal.jpg",
+    ],
+    highlights: [
+      {
+        heading: "Luxury Style",
+        description:
+          "A statement of elegance on the pitch, this luxury football showcases a refined surface finish with subtle panel detailing and a perfectly balanced silhouette. Designed to stand out through sophistication rather than excess, it delivers a timeless, elite look suited for professional play, collector editions, and premium brand presentation.",
+      },
+      {
+        heading: "Luxury Characteristics & Composition",
+        description:
+          "Constructed using premium-grade microfiber leather, this football features a precision-engineered layered core for superior touch and responsiveness. Hand-stitched panels ensure exceptional shape integrity, while the advanced butyl bladder provides long-lasting air retention, stable flight, and a controlled, cushioned feel during high-speed play.",
+      },
+    ],
+  },
+  {
+    slug: "street-sweatshirt",
+    category: "Street Sweatshirt",
+    title: "Street Sweatshirt",
+    image: "/products/street-sweatshirt/grey.jpg",
+    thumbnails: [
+      "/products/street-sweatshirt/grey.jpg",
+      "/products/street-sweatshirt/royal.jpg",
+      "/products/street-sweatshirt/red.jpg",
+      "/products/street-sweatshirt/yellow.jpg",
+    ],
+    highlights: [
+      {
+        heading: "Luxury Style",
+        description:
+          "A statement of elegance on the pitch, this luxury football showcases a refined surface finish with subtle panel detailing and a perfectly balanced silhouette. Designed to stand out through sophistication rather than excess, it delivers a timeless, elite look suited for professional play, collector editions, and premium brand presentation.",
+      },
+      {
+        heading: "Luxury Characteristics & Composition",
+        description:
+          "Constructed using premium-grade microfiber leather, this football features a precision-engineered layered core for superior touch and responsiveness. Hand-stitched panels ensure exceptional shape integrity, while the advanced butyl bladder provides long-lasting air retention, stable flight, and a controlled, cushioned feel during high-speed play.",
+      },
+    ],
+  },
+  {
+    slug: "lynx-sweatshirt",
+    category: "Lynx Sweatshirt",
+    title: "Lynx Sweatshirt",
+    image: "/products/lynx-sweatshirt/black.jpg",
+    thumbnails: [
+      "/products/lynx-sweatshirt/black.jpg",
+      "/products/lynx-sweatshirt/blue.jpg",
+      "/products/lynx-sweatshirt/navy.jpg",
+      "/products/lynx-sweatshirt/red.jpg",
     ],
     highlights: [
       {
@@ -502,15 +624,15 @@ export const PRODUCTS = [
     slug: "tracksuits",
     category: "Tracksuits",
     title: "Tracksuits",
-    image: "/products/tracksuits/1.jpg",
+    image: "/products/tracksuits/e1.jpg",
     thumbnails: [
-      "/products/tracksuits/1.jpg",
-      "/products/tracksuits/2.jpg",
-      "/products/tracksuits/3.jpg",
-      "/products/tracksuits/4.jpg",
-      "/products/tracksuits/5.jpg",
-      "/products/tracksuits/6.jpg",
-      "/products/tracksuits/7.jpg",
+      "/products/tracksuits/e2.jpg",
+      "/products/tracksuits/e3.jpg",
+      "/products/tracksuits/e4.jpg",
+      "/products/tracksuits/e5.jpg",
+      "/products/tracksuits/e6.jpg",
+      "/products/tracksuits/e7.jpg",
+      "/products/tracksuits/e8.jpg",
     ],
     highlights: [
       {

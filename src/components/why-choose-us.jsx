@@ -8,17 +8,22 @@ export default function WhyChooseUs() {
         {/* LEFT SIDE */}
         <div>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4 tracking-tight text-[#30318B]">
-            Why choose us?
+            Factory - <span className="text-[#FF7A00]">Future Star</span>
           </h2>
 
-          <p className="text-black leading-relaxed mb-8 max-w-md">
-            We specialize in manufacturing high-performance sportswear and equipment for clubs, academies, and private labels. Our process is designed to handle custom designs, bulk orders, and strict quality standards—so your products perform on and off the field.
-          </p>
+          <h1 className="text-black font-bold text-2xl leading-relaxed mb-3 max-w-md">
+            Factory Address:
+          </h1>
+          <h3 className="text-black leading-relaxed mb-8 max-w-md">
+            Amina Abad Road Ram Garha,
+            Near Tulip Marquee Po Box
+            Nekapura, Sialkot 51310, Pakistan 
+          </h3>
 
           {/* IMAGE */}
-          <div className="rounded-xl h-[250px] lg:h-[525px] shadow-xl border border-white/10">
+          <div className="rounded-xl h-[250px] lg:h-[325px] shadow-xl border border-white/10">
             <Image
-              src="/why-choose.png" // replace with real image
+              src="/why-choose1.png" // replace with real image
               width={390}
               height={300}
               alt="Future Star Team"
