@@ -6,32 +6,32 @@ const moments = [
   {
     title: "Pattern Cutting",
     caption: "Laser-cut panels prepared for bulk orders.",
-    src: "/factory/1.png",
+    src: "/factoryw/1.png",
   },
   {
     title: "Fabric Inspection",
     caption: "Every roll checked for shade and defects.",
-    src: "/factory/2.png",
+    src: "/factoryw/2.png",
   },
   {
     title: "Printing Zone",
     caption: "Screen & sublimation prints in full motion.",
-    src: "/factory/3.png",
+    src: "/factoryw/3.png",
   },
   {
     title: "Embroidery Room",
     caption: "Club crests & logos stitched with precision.",
-    src: "/factory/4.png",
+    src: "/factoryw/4.png",
   },
   {
     title: "Stitching Line",
     caption: "Highly trained operators on production lines.",
-    src: "/factory/5.png",
+    src: "/factoryw/5.png",
   },
   {
     title: "Quality Check",
     caption: "Measurement, stitching and branding verified.",
-    src: "/factory/6.png",
+    src: "/factoryw/6.png",
   },
 ];
 

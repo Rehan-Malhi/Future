@@ -20,12 +20,12 @@ export default function Footer() {
                 href="/"
                 className="inline-flex items-center text-2xl font-extrabold tracking-tight"
               >
-                <span className="text-slate-100">Future</span>
+                <span className="text-white">Future</span>
                 <span className="ml-1 bg-[#FF7A00] bg-clip-text text-transparent">
                   Star
                 </span>
               </Link>
-              <p className="mt-3 text-sm text-slate-300/80">
+              <p className="mt-3 text-sm text-white">
                 Future-built sportswear manufacturing for clubs, brands and teams
                 worldwide — from first tech pack to final packed carton.
               </p>
@@ -81,14 +81,14 @@ export default function Footer() {
             {/* Quick links */}
             <div className="grid flex-1 grid-cols-1 gap-8 text-sm text-slate-300/80 sm:grid-cols-2 lg:grid-cols-3">
               <div>
-                <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+                <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-white">
                   Navigation
                 </h4>
                 <ul className="mt-3 space-y-2">
                   <li>
                     <Link
                       href="/about"
-                      className="transition hover:text-[#FF7A00]"
+                      className="text-white transition hover:text-[#FF7A00]"
                     >
                       About Future Star
                     </Link>
@@ -96,7 +96,7 @@ export default function Footer() {
                   <li>
                     <Link
                       href="/products"
-                      className="transition hover:text-[#FF7A00]"
+                      className="text-white transition hover:text-[#FF7A00]"
                     >
                       Product Range
                     </Link>
@@ -104,7 +104,7 @@ export default function Footer() {
                   <li>
                     <Link
                       href="/#factory-moments"
-                      className="transition hover:text-[#FF7A00]"
+                      className="text-white transition hover:text-[#FF7A00]"
                     >
                       Factory Moments
                     </Link>
@@ -113,20 +113,20 @@ export default function Footer() {
               </div>
 
               <div>
-                <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+                <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-white">
                   Manufacturing
                 </h4>
                 <ul className="mt-3 space-y-2">
-                  <li>Custom Football Kits</li>
-                  <li>Tracksuits &amp; Hoodies</li>
-                  <li>MOQ &amp; Bulk Production</li>
+                  <li className="text-white">Custom Football Kits</li>
+                  <li className="text-white">Tracksuits &amp; Hoodies</li>
+                  <li className="text-white">MOQ &amp; Bulk Production</li>
                 </ul>
               </div>
             </div>
           </div>
 
           {/* Bottom bar */}
-          <div className="mt-8 ml-24 flex flex-col items-center justify-between gap-2 border-t border-slate-800/80 pt-4 text-xs text-slate-400 sm:flex-row">
+          <div className="mt-8 ml-24 flex flex-col items-center justify-between gap-2 border-t border-slate-800/80 pt-4 text-xs text-white sm:flex-row">
             <p>
               © {new Date().getFullYear()} Future Star Manufacturing. All rights
               reserved.
@@ -135,7 +135,7 @@ export default function Footer() {
         </div>
         <div className="mx-auto lg:mr-20">
           <Image
-            src={"/footer1.png"}
+            src={"/foot.png"}
             width={500}
             height={500}
             alt="Wave"
